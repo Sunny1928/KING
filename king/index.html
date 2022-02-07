@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>King</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">
+            <h1>&#8211;&#8211; King &#8211;&#8211;</h1>
+        </div>
+        <div class="container">
+            <div class="content player">
+                <h2>player</h2>
+                <div class="gesture">
+                    <img src="" id="playerSign">
+                </div>
+                <div class="func">
+                    <p id="playerPrgh"></p>
+                </div>
+            </div>
+            <div class="content computer">
+                <h2>computer</h2>
+                <div class="gesture">
+                    <img src="" id="computerSign">
+                </div>
+                <div class="func">
+                    <p id="computerPrgh"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="btn">
+                <button id="de-3Btn">
+                    <img src="image/shield-3.png">
+                    <div class="caption">
+                        <p>shield &#8546;</p>
+                    </div>
+                </button>
+                <div class="cantUse active" id="de-3"></div>
+            </div>
+            <div class="btn">
+                <button id="de-2Btn">
+                    <img src="image/shield-2.png">
+                    <div class="caption">
+                        <p>shield &#8545;</p>
+                    </div>
+                </button>
+                <div class="cantUse active" id="de-2"></div>
+            </div>
+            <div class="btn">
+                <button id="de-1Btn">
+                    <img src="image/shield-1.png">
+                    <div class="caption">
+                        <p>shield &#8544;</p>
+                    </div>
+                </button>
+                <div class="cantUse active" id="de-1"></div>
+            </div>
+            <div class="btn">
+                <button id="buBtn">
+                    <img src="image/bullet.png">
+                    <div class="caption">
+                        <p>bullet</p>
+                    </div>
+                </button>
+                <div class="cantUse" id="bu"></div>
+            </div>
+            <div class="btn">
+                <button id="gun-1Btn">
+                    <img src="image/gun.png">
+                    <div class="caption">
+                        <p>shoot &#8544;</p>
+                    </div>
+                </button>
+                <div class="cantUse active" id="gun-1"></div>
+            </div>
+            <div class="btn">
+                <button id="gun-2Btn">
+                    <img src="image/duel.png">
+                    <div class="caption">
+                        <p>shoot &#8545;</p>
+                    </div>
+                </button>
+                <div class="cantUse active" id="gun-2"></div>
+            </div>
+            <div class="btn">
+                <button id="gun-3Btn">
+                    <img src="image/cannon.png">
+                    <div class="caption">
+                        <p>shoot &#8546;</p>
+                    </div>
+                </button>
+                <div class="cantUse active" id="gun-3"></div>
+            </div>
+
+            
+               
+        </div>
+
+        <div class="modal" id="endModal">
+            <div class="message">
+                <h1 id="msg">You won!</h1>
+                <p>Would you want to play again?</p>
+                <button class="restartBtn" id="restartBtn">Restart</button>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        
+
+
+
+
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

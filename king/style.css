@@ -1,0 +1,186 @@
+:root{
+    --green:#3EB595;
+    --yellow:#FFF447;
+    --grey1:#C9C9C9;
+    --grey2:#696969;
+    --black:#1A1A1A;
+}
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background: var(--grey1);
+    color: var(--black);
+    font-size: 24px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--green);
+    text-shadow: 5px 2px 2px var(--grey2);
+    margin: 30px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container .content{
+    display: block;
+    justify-content: center;
+    margin: 0px 60px;
+    padding: 20px;
+    text-align: center;
+}
+.container .content h2{
+    font-size: 40px;
+    margin: 20px;
+}
+.container .content .gesture{
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--grey2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .content .func{
+    height: 50px;
+    
+}
+
+
+button{
+    outline: none;
+    border: none;
+    background: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons .btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 30px 15px;
+    border: 2px solid var(--grey2);
+    border-radius: 10px;
+    background-color: var(--grey1);
+}
+.btn button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.btn img{
+    width: 40px;
+    height: 40px;
+}
+.buttons button:active{
+    filter: brightness(110%);
+}
+.buttons button:hover .caption{
+    z-index: 1;
+}
+.btn .caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--green);
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn .caption p{
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.6;
+}
+.btn .cantUse{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: var(--grey2);
+    opacity: 0.6;
+}
+.btn .cantUse.active{
+    z-index: 2;
+}
+
+
+.modal{
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    background: #fff;
+    display: flex;
+    transform: translate(-50%, -50%) scale(0);
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+    transition: 3s;
+}
+.modal .message{
+    text-align: center;
+    margin: auto;
+    padding: 20px 0;
+}
+.modal .message h1{
+    text-transform: uppercase;
+}
+.restartBtn{
+    background: var(--green);
+    color:#fff;
+    box-shadow: -2px -2px 3px 1px var(--grey1);
+    padding: 10px 30px;
+    margin: 25px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.restartBtn:hover{
+    filter: brightness(110%);
+}
+.restartBtn:active{
+    box-shadow: none;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--green);
+    opacity: 0.5;
+}
+.overlay.active{
+    display: block;
+    transition: 3s;
+}
