@@ -1,1 +1,2 @@
-# King-123
+# King
+It is a simple game like rock paper scissors.
